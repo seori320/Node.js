@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>main</title>
+
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      
+		/* stylelint-disable selector-list-comma-newline-after */
+		
+		.blog-header {
+		  border-bottom: 1px solid #e5e5e5;
+		}
+		
+		.blog-header-logo {
+		  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+		  font-size: 2.25rem;
+		}
+		
+		.blog-header-logo:hover {
+		  text-decoration: none;
+		}
+		
+		
+		
+		/* GLOBAL STYLES
+		-------------------------------------------------- */
+		/* Padding below the footer and lighter body text */
+		
+		body {
+		  
+		  padding-bottom: 3rem;
+		  color: #5a5a5a;
+		}
+		
+		
+		/* CUSTOMIZE THE CAROUSEL
+		-------------------------------------------------- */
+		
+		/* Carousel base class */
+		.carousel {
+		  margin-bottom: 4rem;
+		}
+		/* Since positioning the image, we need to help out the caption */
+		.carousel-caption {
+		  bottom: 3rem;
+		  z-index: 10;
+		}
+		
+		/* Declare heights because of positioning of img element */
+		.carousel-item {
+		  height: 32rem;
+		}
+		
+		
+		/* MARKETING CONTENT
+		-------------------------------------------------- */
+		
+		/* Center align the text within the three columns below the carousel */
+		.marketing .col-lg-4 {
+		  margin-bottom: 1.5rem;
+		  text-align: center;
+		}
+		/* rtl:begin:ignore */
+		.marketing .col-lg-4 p {
+		  margin-right: .75rem;
+		  margin-left: .75rem;
+		}
+		/* rtl:end:ignore */
+		
+		
+		/* Featurettes
+		------------------------- */
+		
+		.featurette-divider {
+		  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+		}
+		
+		/* Thin out the marketing headings */
+		/* rtl:begin:remove */
+		.featurette-heading {
+		  letter-spacing: -.05rem;
+		}
+		
+		/* rtl:end:remove */
+		
+		/* RESPONSIVE CSS
+		-------------------------------------------------- */
+		
+		@media (min-width: 40em) {
+		  /* Bump up size of carousel content */
+		  .carousel-caption p {
+		    margin-bottom: 1.25rem;
+		    font-size: 1.25rem;
+		    line-height: 1.4;
+		  }
+		
+		  .featurette-heading {
+		    font-size: 50px;
+		  }
+		}
+		
+		@media (min-width: 62em) {
+		  .featurette-heading {
+		    margin-top: 7rem;
+		  }
+		}
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="signup.html">Sign up</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="main.html">Fair Site</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="search.html" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="info.html">페어 정보 페이지</a>
+      <a class="p-2 link-secondary" href="#">맵 정보 페이지</a>
+      <a class="p-2 link-secondary" href="announce_personal.html">공지 페이지</a>
+      <a class="p-2 link-secondary" href="community.html">커뮤니티</a>
+      <a class="p-2 link-secondary" href="announce_team.html">업체 공지 페이지</a>
+      <a class="p-2 link-secondary" href="inquire.html">페어 페이지 문의</a>
+      <a class="p-2 link-secondary" href="mypage.html">마이 페이지</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Seoul Dessert Fair</h1>
+      <p class="lead my-3">나의 주말을 달콤하게 만들어 줄 베스트 초이스, 서울디저트페어<br>당신의 하루를 달콤하게 보내보세요!<br>자세한 정보는 아래 버튼을 눌러주세요</p>
+      <p class="lead mb-0"><a href="info.html" class="text-white fw-bold">자세히보기</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Personal</strong>
+          <h3 class="mb-0">30회 후기 보러가기</h3>
+          <p class="card-text mb-auto">다양한 후기들을 보고 마음에 드는 디저트를 찾아보세요!<br>방문한 적이 있다면 후기를 남겨 즐거움을 함께 공유해보세요!</p>
+          <a href="info.html" class="stretched-link">후기 남기러 가기</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Corporation</strong>
+          <h3 class="mb-0">30회 부스 참가</h3>
+          <div class="mb-1 text-muted">부스 신청 안내</div>
+          <p class="mb-auto">부스에 참여해 멋진 실력을 뽐내보세요!<br>부스 관련 자세한 내용은 아래 링크를 클릭해주세요</p>
+          <a href="#" class="stretched-link">업체 공지 보러가기</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">새로운 서디페<br><span class="text-muted">매번 달라지는 컨셉과 이벤트!</span></h2>
+        <p class="lead">서디페에서는 눈과 입을 만족시키는 먹거리들을 시즌에 따라 다양한 컨셉(초코전, 딸기전, 벚꽃전 등)으로 여러분께 선보입니다.<br>
+          디저트 뿐만 아니라 다양한 공예품, 다양한 푸드, 반려견을 위한 수제 간식, 강아지 옷 등도 팔고 있습니다.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://cdn.discordapp.com/attachments/924169305736765502/1120662350157074513/main_bt1.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">케이크 전시 공모전</h2>
+        <p class="lead">- 일정안내<br>1. 작품 접수 : 4월 28일(금) ~ 5월 15일(월)<br>2. 전시작 발표 : 5월 19일(금) (개별 안내 및 공지)<br>3. 전시작 전시 : 5월 26일(금) ~ 5월 28일(일)<br><br>자세한 정보는 인스타그램을 확인해주세요!</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://cdn.discordapp.com/attachments/924169305736765502/1120662558240677908/main_bt2.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">서디페는 개성 넘치는<br>코스튬 플레이어와 함께합니다</h2>
+        <p class="lead">행사장 내 무단 촬영은 불가합니다. 코스튬 플레이어 촬영, 각 부스의 제품 촬영은 꼭 사전 동의하에 진행해 주세요! 모두가 즐거울 수 있는 문화행사를 만들어주세요^^
+          <br>* 무단 촬영 및 배포는 처벌 받을 수 있습니다. *
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://cdn.discordapp.com/attachments/924169305736765502/1120662574862716948/main_bt3.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div>
+
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 한양여자대학교 2103352 이서윤</p>
+  </footer>
+</main>
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  </body>
+</html>
